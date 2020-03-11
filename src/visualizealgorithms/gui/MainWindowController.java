@@ -18,6 +18,7 @@ import javafx.scene.layout.AnchorPane;
 //Project imports
 import visualizealgorithms.bll.algorithm.sorting.BubbleSort;
 import visualizealgorithms.bll.algorithm.IAlgorithm;
+import visualizealgorithms.bll.algorithm.sorting.RadixSort;
 import visualizealgorithms.util.NumberGenerator;
 
 /**
@@ -42,6 +43,8 @@ public class MainWindowController implements Initializable {
         });
 
         lvAlgorithms.getItems().add(new BubbleSort());
+        lvAlgorithms.getItems().add(new RadixSort());
+        
         //add other algorithms
     }
 
